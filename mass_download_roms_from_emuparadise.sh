@@ -14,12 +14,9 @@ echo; echo "https://www.emuparadise.me/roms-isos-games.php"
 echo 'Select the desired Console then "List all Titles"'
 
 # Getting user inputs
-#read -p "Please paste the URL of the list of all games:  " allgameslisturl
-allgameslisturl="https://www.emuparadise.me/Nintendo_Gamecube_ISOs/List-All-Titles/42"
+read -p "Please paste the URL of the list of all games:  " allgameslisturl
 echo "Please select which the region of games you want to download: "
-#read -p "Available regions Europe | Japan | USA | Germany : " region
-region="Germany"
-
+read -p "Available regions Europe | Japan | USA | Germany : " region
 
 # Writing list of game and getting ids
 if echo $allgameslisturl | grep http  > /dev/null 2>&1
